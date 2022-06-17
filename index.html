@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSiliuk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="wrapper">
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu_link" href="#contacts">Contacts</a></li>
+                <li class="menu__item"><a class="menu_link" href="#aboutmyself">About myself</a></li>
+                <li class="menu__item"><a class="menu_link" href="#codeexample">Code example</a></li>
+                <li class="menu__item"><a class="menu_link" href="#projects">Projects</a></li>
+                <li class="menu__item"><a class="menu_link" href="#course">Course</a></li>
+                <li class="menu__item"><a class="menu_link" href="#languages">Languages</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="ab-me">
+            <div class="name">
+                <h1>Veronika Siliuk</h1>
+            </div>
+            <div class="about" id="aboutmyself">
+            <img class="am" src="./img/photo.png" alt="photo">
+            
+                <aside class ="description">I love to learn something new for myself. I work well in a team and I have a high level of organization and responsibility.
+                    <br>I have worked as an accountant, public procurement specialist, but so far I do not have the programming experience that I hope to gain.
+                    <br><br>I’m interested in Web Development because this occupation provides endless possibilities for professional growth.
+                    <br><br>I know, that my ability to learn will lead me through this path of becoming a Frontend Developer.</aside>
+            </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="code_example" id="codeexample">
+                <h2>Code example:</h2>
+                <pre>
+           <code>
+            let list = "4 5 29 54 4 0 -123 666 -64 1 -3 6 -6";
+            let func = (list) => list.split(" ").sort((a,b)=>b-a)[0] + list.split(" ").sort((a,b)=>b-a).slice(-1)[0];
+            console.log(func(list));
+
+                                  _______________________________________
+
+            let arr = ["bla","wekmvever","needle","bntyn","qwd","qfverv","rtbrtb"];
+            function findNeedle (arr){
+              let position = arr.indexOf("needle")
+              return `Нашел иголку на позиции ${position}`
+            };
+            console.log(findNeedle(arr));
+            </code>
+        </pre>
+            </div>
+        </div>          
+
+        <div class="wrapper">
+            <div class="projects" id="projects">
+                <h2>Projects:</h2>
+                <ol>
+                    <li><a class ="project" href="https://veronikasiliuk.github.io/shelter/pages/main/index.html">for example: Shelter</a></li>
+                </ol>
+            </div>
+            <div class="course" id="course">
+                <h2>Skills:</h2>
+                <ol>
+                    <li>base HTML, CSS</li>
+                    <li>base JavaScript</li>
+                </ol>
+            </div>
+            <div class="Languages" id="languages">
+                <h2>Languages:</h2>
+                <ol>
+                    <li>Russian-native;</li>
+                    <li>English - A2, in progress.</li>
+                </ol>
+            </div>
+            <div class="contacts" id="contacts">
+                <h2>Contacts:</h2>
+                <ol>
+                    <li>e-mail: veronikasiliu@gmail.com.</li>
+                    <li>phone: +375 29 5870123. </li>
+                    <li><a href="https://github.com/VeronikaSiliuk">my GitHub</a></li>
+                </ol>
+            </div>
+        </div>
+    </main>
+    <footer class="wrapper">
+        <div class="social">
+            <ul class="social__media">
+                <li> 2022, Belarus, Grodno</li>
+                <li>
+                    <a class="GitHub" href="https://github.com/VeronikaSiliuk"><img src="./img/2048px-Octicons-mark-github.svg.png" alt="GitHub" width="50" height="50"></a>
+                </li>
+                <li>
+                    <a class="logo" href="https://rs.school/js/"><img src="./img/rs_school_js.svg" alt="Logo" width="100" height="50"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
